@@ -23,7 +23,7 @@ class PigLatinizer
       end
     end
     
-    @result = latin_array.join(" ")
+    @result = latin_array
   end
   
 end
