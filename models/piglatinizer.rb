@@ -9,7 +9,7 @@ class PigLatinizer
     if word[0].downcase == "y"
       first_vowel = word.index(/[aeiou]/)
     else
-      first_vowel = word.index(/[aeiouy]/)
+      first_vowel = word.index(/[aeiouyAEIOUY]/)
     end
     
     if first_vowel == 0 
