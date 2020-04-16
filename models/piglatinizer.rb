@@ -8,9 +8,14 @@ class PigLatinizer
   
   def process_text
     text_array = @text.split(" ")
+    
     latin_array = text_array.map do |word|
-      word.index(/[aeiouy]/)
+      first_vowel = word.index(/[aeiouy]/)
+      
+      if first_vowel == 0 
+        return word += "way"
     end
+    
   end
   
 end
