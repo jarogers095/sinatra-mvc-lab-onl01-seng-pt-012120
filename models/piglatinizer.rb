@@ -9,7 +9,7 @@ class PigLatinizer
   def process_text
     text_array = @text.split(" ")
     latin_array = text_array.map do |word|
-      
+      word.index(/[aeiouy]/)
     end
   end
   
