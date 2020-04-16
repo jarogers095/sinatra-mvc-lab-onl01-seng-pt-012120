@@ -17,13 +17,13 @@ class PigLatinizer
       end
       
       if first_vowel == 0 
-        word + "way"
+        return word + "way"
       else
-        word.slice!(first_vowel, -1) + word + "ay"
+        return word.slice!(first_vowel, -1) + word + "ay"
       end
     end
-    puts latin_array
-    @result = latin_array
+
+    @result = latin_array.join(" ")
   end
   
 end
