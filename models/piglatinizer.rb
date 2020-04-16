@@ -17,9 +17,9 @@ class PigLatinizer
       end
       
       if first_vowel == 0 
-        return word + "way"
+        word + "way"
       else
-        return word.slice!(first_vowel, -1) + word + "ay"
+        word.slice!(first_vowel, -1) + word + "ay"
       end
     end
 
