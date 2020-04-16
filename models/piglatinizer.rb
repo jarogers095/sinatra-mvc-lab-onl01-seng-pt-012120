@@ -8,7 +8,7 @@ class PigLatinizer
   
   def process_text
     text_array = @text.split(" ")
-    puts text_array
+    
     latin_array = text_array.map do |word|
       if word[0].downcase == "y"
         first_vowel = word.index(/[aeiou]/)
@@ -22,7 +22,7 @@ class PigLatinizer
         return word.slice!(first_vowel, -1) + word + "ay"
       end
     end
-    
+    puts latin_array
     @result = latin_array
   end
   
