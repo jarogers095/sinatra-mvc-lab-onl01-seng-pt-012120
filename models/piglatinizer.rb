@@ -10,10 +10,16 @@ class PigLatinizer
     text_array = @text.split(" ")
     
     latin_array = text_array.map do |word|
-      first_vowel = word.index(/[aeiouy]/)
+      if word[0].downcase == "y"
+        first_vowel = word.index(/[aeiou]/)
+      else
+        first_vowel = word.index(/[aeiouy]/)
+      end
       
       if first_vowel == 0 
         return word += "way"
+      else
+        
     end
     
   end
