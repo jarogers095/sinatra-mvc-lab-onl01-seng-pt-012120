@@ -1,6 +1,6 @@
 class PigLatinizer
   def piglatinize(text)
-    text_array = @text.split(" ")
+    text_array = text.split(" ")
     
     latin_array = text_array.map do |word|
       if word[0].downcase == "y"
