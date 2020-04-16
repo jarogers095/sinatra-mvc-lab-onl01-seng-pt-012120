@@ -19,7 +19,8 @@ class PigLatinizer
       if first_vowel == 0 
         word + "way"
       else
-        word
+        latinized_word = word.slice!(first_vowel, -1)
+        latinized_word
       end
     end
 
